@@ -1,4 +1,10 @@
-ros2 run localization_turtle localization_turtle        (executable and package names are both same which is group6_rwa5)
+1st run launch file after buildingL:- ros2 launch final_project final_project.launch.py
 
 
-Note: Turtle bot is reaching at all the 3 waypoints but it is getting corrected at each point by spinning
+then run the part_publisher node arom another terminal:- ros2 run part_publisher part_publisher_exe
+
+in third terminal, run for transformation & navigation nodes:-    ros2 run task2 part_subscriber_exe
+
+
+Note: All part's world frame pose to be visited is found and stored in Parts vector defined in camera_broadcaster
+For some reason, it was unable to be published to turtlebot for navgation. So, turtlbot is moving towards 1st part only. It is stoppng after that
